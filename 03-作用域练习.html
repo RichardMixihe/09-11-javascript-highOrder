@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let sum = 0;
+        // for (let i = 0; i < 10; i++) {
+        //     sum +=i ;
+        // }
+        // console.log(i);  // 报错
+        // // 原因：1是块级作用域中的变量，只能在自己的做用域中使用
+
+        // 问题：块级作用域？局部作用域？
+        // 是局部作用域，是块级作用域
+        // 只要遇到函数，就是局部作用域，不用考虑块级作用域
+        function fn() {
+            let a = 123;
+        }
+        console.log(a);
+    </script>
+</body>
+</html>
