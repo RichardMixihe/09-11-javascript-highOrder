@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 箭头函数详解
+        // 语法：
+        // () => {}
+        // 1.第一个小括号中用来设置形参
+        // 2.第二个{}中设置函数体代码的
+
+        // 箭头函数如何执行（箭头函数本质上就是一个匿名函数）
+        // let fn = (a)=>{
+        //     console.log(a);
+        // }
+        // fn(234)
+
+        // b)可以便用自调用函数，执行箭头函数中的代码
+        ((a) =>{
+            console.log(a);
+        })('abc');
+    </script>
+</body>
+</html>
