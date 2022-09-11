@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //要求：通过函数的方式，求任意个数字的和
+        let num = 0;
+        function fn() {
+            for (let i = 0; i < arguments.length; i++) {
+                num += arguments[i];
+                
+            }
+            return num
+        }
+        let res = fn(1,2,3,4);
+        console.log(res);
+    </script>
+</body>
+</html>
