@@ -10,13 +10,26 @@
     <script>
         //闭包函数作用：实现数据的私有
         // 代码演示：
-        function fn() {
-            let a = 1; 
-            a++;
-            console.log(a);
-        }
-        fn();
+        // function fn() {
+        //     let a = 1; 
+        //     a++;
+        //     console.log(a);
+        // }
+        // fn();
 
+
+        //利用闭包函数实现变量的私有化（延长变量的生命周期）
+        function fn(){
+            let a =1;
+                function fn1(){
+                a++;
+            //返回值：返回值是一个函
+            }
+            return fn1;
+
+        }
+//接收函数的返回值，res就是函数中的返回值fn1,res就是一个函数
+let res =  fn();
     </script>
 </body>
 </html>
