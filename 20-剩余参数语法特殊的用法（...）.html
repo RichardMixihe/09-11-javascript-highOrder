@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // ...的特殊用法： 
+        // 1.如果将...写到数组前面，表示将数组中的值展开
+        // 2.如果将...写到形参前面，表示剩余参数
+        // 
+
+        // 代码演示：展开数组
+        // let ary = [1,2,3]
+        // console.log(...ary);
+
+
+        // 利用3个点可以将数组中的值展开,利用剩余参数很快速的求任意个数字的最大值
+        // 传统的写法：求任意个数字的最大值
+        function getMax(...ary) {
+
+            let max = ary[0]
+            for (let i = 0; i < ary.length; i++) {
+                if (max<ary[i]) {
+                    max = ary[i]
+                }
+            }
+            console.log(max);
+
+         }
+        getMax(1,2,3)
+    </script>
+</body>
+</html>
