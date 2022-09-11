@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //动态参数：动态参数本质上就是一个用来获取实参的一种新方式
+        //应用场景：如果形参个数不确定，那么可以通过动态参数获取实参信息.
+
+
+
+
+        // 如何通过动态参数获取参数信息，
+        // 解决方案：在函数中通过arguments(动态参数)获取实参信息
+
+        function fn() {
+            console.log(arguments);
+        }
+        fn(1,2,3,4,5);
+    </script>
+</body>
+</html>
