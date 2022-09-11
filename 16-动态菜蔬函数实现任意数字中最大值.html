@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //要求：通过函数实现，求任意个数数字的最大值
+
+
+            function fn() {
+                let max = arguments[0];
+
+                for (let i = 0; i < arguments.length; i++) {
+                    if (max<arguments[i]) {
+                        max = arguments[i];
+                    }
+                }
+                return max
+            }
+            console.log(fn(1,2,3,4,3,2,1,2));
+
+
+            //总结
+            // 1.只有函数的参数不确定的时候，使用动态参数获取
+            // 2.如果函数的参数个数确定，推荐使用形参，不推荐使用动态参数arguments
+
+    </script>
+</body>
+</html>
